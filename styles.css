@@ -53,14 +53,19 @@ body {
 }
 
 .screens {
-  display: flex;
-  gap: 14px;
-  overflow-x: auto;
-  padding-top: 8px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 18px;
+  margin-top: 10px;
+  justify-items: center;
 }
 
 .screens img {
-  width: 190px;
-  border-radius: 14px;
+  width: 100%;
+  max-width: 220px;
+  border-radius: 22px;
   border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+  background: #fff;
 }
+  
