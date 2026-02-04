@@ -51,21 +51,25 @@ body {
   font-size: 14px;
   color: var(--muted);
 }
-
 .screens {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 18px;
   margin-top: 10px;
-  justify-items: center;
+  place-items: center;
 }
 
 .screens img {
   width: 100%;
   max-width: 220px;
+
+  /* makes them look like phone cards */
+  aspect-ratio: 9 / 19.5;
+  object-fit: cover;
+  object-position: top;
+
   border-radius: 22px;
   border: 1px solid #e5e7eb;
   box-shadow: 0 8px 18px rgba(0,0,0,0.08);
   background: #fff;
 }
-  
