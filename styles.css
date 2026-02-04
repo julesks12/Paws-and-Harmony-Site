@@ -51,3 +51,16 @@ body {
   font-size: 14px;
   color: var(--muted);
 }
+
+.screens {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  padding-top: 8px;
+}
+
+.screens img {
+  width: 190px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+}
